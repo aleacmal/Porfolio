@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 100%;
+}
+
+/* Navigasi */
+.nav-bar {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: #171010;
+  align-items: center;
+  font-weight: 500;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  z-index: 99;
+}
+.logo {
+  margin-left: 3rem;
+  height: 60px;
+  width: 80px;
+}
+.nav-kanan {
+  display: flex;
+  margin-right: 3rem;
+  list-style: none;
+}
+.nav-kanan > li > a {
+  text-decoration: none;
+  color: #ddd;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.nav-kanan > li > a:hover {
+  color: #e6e22a;
+}
+.toggle-menu {
+  display: none;
+}
+
+/* header */
+.header {
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  width: 100%;
+  padding: 10rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #171010;
+}
+.pp-image {
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  filter: brightness(85%);
+}
+.pengenalan {
+  border-radius: 2rem;
+  padding: 3rem;
+  color: #ccc;
+}
+.pengenalan > h1 {
+  text-shadow: 3px 3px 3px #62cd41;
+  font-size: 2.5rem;
+}
+.pengenalan > p {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* section */
+.section {
+  height: 100vh;
+  padding: 6rem 7rem;
+}
+.section > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: cursive;
+}
+
+/* section 1 */
+.section--1 {
+  background-image: url(skill-bg.jpg);
+  background-size: cover;
+}
+.section--1 > .container {
+  width: 50%;
+  margin-left: 0;
+  scroll-margin: 30px;
+}
+.section--1 > .container > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: cursive;
+  text-shadow: 2px 2px 2px #ddd;
+  color: #111;
+}
+.container {
+  justify-content: space-around;
+  margin: 1rem auto;
+}
+.skills {
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+  margin: 0.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+}
+.skills > h4 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+.skills > p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+/* section project */
+.section--2 {
+  background-color: #171010;
+}
+.section--2 > .container {
+  width: 70vw;
+  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2, 1fr;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+}
+.section--2 > h1 {
+  color: #ddd;
+  text-shadow: 3px 3px 3px #62cd41;
+  margin-bottom: 3rem;
+}
+.project > img {
+  width: 100%;
+}
+.section--2 > .container > .project {
+  background-color: #ccc;
+  border-radius: 2rem;
+  width: 35vw;
+}
+.project-title {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.section--2 > .container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.section--2 > .container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* section contact */
+.section--3 {
+  background-image: url(contact-bg.jpg);
+  background-size: cover;
+  padding: 11rem 7rem;
+}
+.container-contact {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ccc;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  font-family: cursive;
+}
+.container-contact > h1 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+.container-contact > p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  padding: 0.3rem 1rem;
+  background-color: #40c418;
+  font-size: 1.7rem;
+  border-radius: 2rem;
+  display: inline-block;
+}
+.btn:hover {
+  background-color: #50e922;
+  color: #eee;
+}
+.sosial-media-logo > .fa:hover {
+  color: #50e922;
+}
+.container-contact > a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 2.5rem;
+}
+.sosial-media-logo {
+  margin: 1rem;
+}
+.fa-envelope {
+  margin-right: 1rem;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: #171010;
+  color: #ddd;
+  padding: 1.6rem;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 550px) {
+  /* header */
+  .header {
+    padding: 5rem 2rem;
+    flex-direction: column;
+  }
+  .pp-image {
+    width: 60%;
+  }
+  .pengenalan {
+    padding: 2rem;
+    color: #ccc;
+    width: 100%;
+  }
+  .pengenalan > h1 {
+    font-size: 1.7rem;
+  }
+  .pengenalan > p {
+    font-size: 1rem;
+  }
+
+  /* section */
+  .section {
+    height: 100vh;
+    padding: 4rem 3rem;
+  }
+  .section > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: cursive;
+  }
+
+  /* section 1 */
+  .section--1 > .container {
+    width: 100%;
+  }
+  .container {
+    justify-content: space-around;
+    margin: 1rem auto;
+  }
+  .skills > h4 {
+    font-size: 1.6rem;
+  }
+  .skills > p {
+    font-size: 1.1rem;
+  }
+
+  /* section project */
+  .project-title {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+  .section--2 > .container > .project {
+    width: 50vw;
+  }
+
+  /* section contact */
+  .section--3 {
+    padding: 9rem 3rem;
+  }
+  .container-contact {
+    width: 100%;
+  }
+  .container-contact > h1 {
+    font-size: 2.7rem;
+  }
+  .container-contact > p,
+  .container-contact > .btn {
+    font-size: 1.8rem;
+  }
+
+  /* nav */
+  .nav-kanan {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: right;
+    right: -15rem;
+    top: 0;
+    background-color: #171010;
+    transition: 0.6s;
+  }
+  .nav-kanan > li {
+    padding: 1rem 0;
+  }
+  .toggle-menu {
+    display: block;
+    color: #ddd;
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+}
